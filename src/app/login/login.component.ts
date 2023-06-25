@@ -1,25 +1,40 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import{DataService} from '../data.service';
+
+
+
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
   data="Happy Banking With Us!!"
   pdata="acc no"
+  serviceData:any
 
-
-login(a:any)
+constructor( private router: Router,private ds:DataService)
 {
-  console.log(a.value);
-  
-  alert('login clicked')
 
 }
-acnoChange(event:any)
+
+ngOnInit():void{
+this.serviceData= this.ds.sdata
+console.log(this.serviceData);
+this.ds.smethod()
+
+}
+
+login()
 {
-  console.log(event.target.value);
+ 
   
+  //alert('login clicked')
+  
+this.router.navigateByUrl('home')
 }
+
 }
+
