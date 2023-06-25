@@ -1,0 +1,42 @@
+
+
+<h1  >{{data}}</h1>
+
+
+<div>
+    <div class=" text-center row" >
+        <div  class=" col-6 mb-2 mt-5 "  > 
+
+            <form id="d" style="background-color:rgba(255, 0, 0, 0.747); margin-top: 10px; border-radius: 20px;"    action="
+            "  class=" p-2 container w-75  text-center border" > 
+            <h1 class="text-center p-5 " style="color:white" > Sign In</h1>
+            <div class="p-2 mt-2 " >
+                <input (change)="acnoChange($event)" id="u1" type="text" name="uname" style="border: none;" class="form-control mt-2 p-2 " [placeholder]="pdata"  >
+
+            </div >
+
+            <div class="p-2 mt-2" >
+                <input #psw  formControlName="psw"  type="password" name="password" id="p1" class="form-control mt-2 p-2  " placeholder=" enter password"  >
+
+            </div>
+<button  (click)="login(psw)" type="submit" class="btn btn-outline-light mt-4 p-2" >Log in</button>
+<p  class="mt-2" style="color: white;" >
+    don't have account?
+ <a    style="text-decoration: none; color:White;"          routerLink="register" > <strong>create account</strong>
+</a>
+</p>
+
+        </form>
+           
+
+
+        </div>
+
+     <div class="col-6  bdy mt-5 "   >
+        <img   style="height:500px;" src="https://i.postimg.cc/Rh10SqdD/download.png" alt="">
+
+     </div>   
+    </div>
+</div>
+
+
