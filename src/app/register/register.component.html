@@ -21,14 +21,14 @@
             </div >
 
             <div class="p-2 mt-2" >
-                <input  [(ngModel)]="psw" type="password" name="npas" id="p1" class="form-control mt-2 p-2  " placeholder=" enter password"  >
+                <input  [(ngModel)]="psw" type="password" name="password" id="p1" class="form-control mt-2 p-2  " placeholder=" enter password"  >
 
             </div>
             <div class="p-2 mt-2" >
-                <input [(ngModel)]="cpsw" type="password" name="cpass" id="p2" class="form-control mt-2 p-2  " placeholder=" confirm password"  >
+                <input [(ngModel)]="cpsw" type="password" name="cpassword" id="p2" class="form-control mt-2 p-2  " placeholder=" confirm password"  >
 
             </div>
-<button (click)="signup"  type="submit" class="btn btn-outline-light mt-4 p-2" >Sign Up</button>
+<button (click)="signup()"  type="submit" class="btn btn-outline-light mt-4 p-2" >Sign Up</button>
 
 
         </form>

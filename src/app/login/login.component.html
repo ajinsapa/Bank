@@ -11,12 +11,12 @@
             "  class=" p-2 container w-75  text-center border" > 
             <h1 class="text-center p-5 " style="color:white" > Sign In</h1>
             <div class="p-2 mt-2 " >
-                <input  id="t1" type="text" name="uname" style="border: none;" class=" form-control mt-2 p-2 " [placeholder]="pdata"  >
+                <input [(ngModel)]="acno"  id="t1" type="text" name="acno" style="border: none;" class=" form-control mt-2 p-2 " [placeholder]="pdata"  >
 
             </div >
 
             <div class="p-2 mt-2" >
-                <input   type="password" name="password1" id="o1" class=" form-control mt-2 p-2  " placeholder=" enter password"  >
+                <input [(ngModel)]="psw"  type="password" name="password1" id="o1" class=" form-control mt-2 p-2  " placeholder=" enter password"  >
 
             </div>
 <button  (click)="login()" type="submit" class="btn btn-outline-light mt-4 p-2" >Log in</button>
